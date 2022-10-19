@@ -1,4 +1,4 @@
-export { default as Button } from './Button'
-export { default as Input } from './Input'
-export { default as InputForm } from './InputForm'
-export { default as Steps } from './Steps'
+export { default as Button } from './Button.tsx'
+export { default as Input } from './Input.tsx'
+export { default as InputForm } from './InputForm.tsx'
+export { default as Steps } from './Steps.tsx'

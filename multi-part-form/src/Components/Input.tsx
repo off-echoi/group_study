@@ -1,4 +1,10 @@
-function Input({ id, label, ...props }) {
+import { InputHTMLAttributes } from 'react'
+
+interface Iinput extends InputHTMLAttributes<HTMLInputElement> {
+  label: string
+}
+
+function Input({ id, label, ...props }: Iinput) {
   return (
     <div className="input_wrap">
       <label htmlFor={id}>{label}</label>
