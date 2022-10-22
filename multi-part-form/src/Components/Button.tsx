@@ -1,10 +1,11 @@
 import { ButtonHTMLAttributes } from 'react'
 
-interface Ibutton extends ButtonHTMLAttributes<HTMLButtonElement> {
+type Props = {
   text: string
 }
+type ButtonProps = Props & ButtonHTMLAttributes<HTMLButtonElement>
 
-function Button({ text, type = 'button', onClick }: Ibutton) {
+function Button({ text, type = 'button', onClick }: ButtonProps) {
   return (
     <button type={type} onClick={onClick}>
       {text}

@@ -1,8 +1,8 @@
-interface Isteps {
+type StepsProps = {
   currentIndex: number
   stepIndex: number
 }
-function Steps({ currentIndex, stepIndex }: Isteps) {
+function Steps({ currentIndex, stepIndex }: StepsProps) {
   return (
     <p className="steps">
       {currentIndex} / {stepIndex}
